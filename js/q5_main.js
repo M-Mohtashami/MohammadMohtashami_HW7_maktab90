@@ -12,6 +12,7 @@ let keys = map.keys();
 // mapIterator
 // است و برای اجرای توابع مربوط به آرایه باید ابتدا تبدیل به یک آرایه شود.
 
+// solution
 let newKeys = Array.from(keys);
 newKeys.push("more");
 console.log(newKeys);
