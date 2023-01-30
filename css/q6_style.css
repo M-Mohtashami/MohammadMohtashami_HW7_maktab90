@@ -47,6 +47,11 @@ hr {
 textarea {
   width: 100%;
 }
+.form textarea {
+  max-width: 100%;
+  min-height: 8rem;
+  min-width: 10rem;
+}
 .form input,
 textarea,
 select {
@@ -87,4 +92,16 @@ select {
   margin-top: 1rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .form textarea {
+    min-height: 10rem;
+    min-width: 50%;
+  }
 }
