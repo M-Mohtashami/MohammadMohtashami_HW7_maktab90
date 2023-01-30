@@ -9,45 +9,46 @@
   </head>
   <body>
     <main class="container">
-      <h2>Student Registration Form</h2>
+      <h2 class="title">Student Registration Form</h2>
       <hr />
       <form action="" class="form">
         <label for="">
-          <span>Firstname:</span>
+          <span class="lm-1">Firstname:</span>
           <input type="text" />
         </label>
         <label for="">
-          <span>Middlename:</span>
+          <span class="lm-1">Middlename:</span>
           <input type="text" />
         </label>
         <label for="">
-          <span>Lastname:</span>
+          <span class="lm-1">Lastname:</span>
           <input type="text" />
         </label>
         <label class="course">
           <span>Course:</span>
           <select id="course">
-            <optgroup label="Course">
-              <option value="1">course 1</option>
-              <option value="2">course 2</option>
-              <option value="3">course 3</option>
-            </optgroup>
+            <option value="0" disabled selected>Course</option>
+            <option value="1">course 1</option>
+            <option value="2">course 2</option>
+            <option value="3">course 3</option>
           </select>
         </label>
+        <span class="radioLable">Gender:</span>
+        <div class="radioGroup">
+          <input type="radio" id="male" name="gender" value="MALE" checked />
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="FEMALE" />
+          <label for="female">Female</label>
+          <input type="radio" id="other" name="gender" value="OTHER" />
+          <label for="other">Other</label>
+        </div>
         <label for="">
-          <span>Gender:</span>
-          <div class="gender-group">
-            <input type="radio" /> <span>Male</span> <input type="radio" />
-            <span>Female</span> <input type="radio" /> <span>Other</span>
-          </div>
-        </label>
-        <label for="">
-          <span>Phone:</span>
+          <span class="lm-1">Phone:</span>
           <input class="code" type="text" placeholder="+98" />
           <input type="tel" placeholder="phone no" />
         </label>
         <label for="">
-          <span>Current Address</span>
+          <span class="lm-1">Current Address:</span>
           <textarea
             name=""
             id=""
@@ -56,18 +57,19 @@
             placeholder="Current Address"
           ></textarea>
         </label>
-        <label for="">
-          <span>Email:</span>
+        <label for="" class="email-label">
+          <span class="lm-1"><strong>Email:</strong></span>
           <input type="email" placeholder="Enter Email" />
         </label>
-        <label for="">
-          <span>Password</span>
+        <label for="" class="pass-label">
+          <span class="lm-1"><strong>Password:</strong></span>
           <input type="password" placeholder="Enter Password" />
         </label>
-        <label for="">
-          <span>Re-type Password</span>
+        <label for="" class="retype-label">
+          <span class="lm-1"><strong>Re-type Password:</strong></span>
           <input type="password" placeholder="Retype Password" />
         </label>
+        <button type="submit" class="submit">Register</button>
       </form>
     </main>
     <script src="js/q6_main.js"></script>
