@@ -12,27 +12,30 @@
       <h2 class="title">Student Registration Form</h2>
       <hr />
       <form action="" class="form">
-        <label for="">
-          <span class="lm-1">Firstname:</span>
-          <input type="text" />
-        </label>
-        <label for="">
-          <span class="lm-1">Middlename:</span>
-          <input type="text" />
-        </label>
-        <label for="">
-          <span class="lm-1">Lastname:</span>
-          <input type="text" />
-        </label>
-        <label class="course">
-          <span>Course:</span>
+        <div>
+          <label class="lm-1">Firstname:</label>
+          <input type="text" name="firstname" />
+          <div class="error"></div>
+        </div>
+        <div>
+          <label class="lm-1">Middlename:</label>
+          <input type="text" name="middlename" />
+          <div class="error"></div>
+        </div>
+        <div>
+          <label class="lm-1">Lastname:</label>
+          <input type="text" name="lastname" />
+          <div class="error"></div>
+        </div>
+        <div class="course">
+          <label>Course:</label>
           <select id="course">
             <option value="0" disabled selected>Course</option>
             <option value="1">course 1</option>
             <option value="2">course 2</option>
             <option value="3">course 3</option>
           </select>
-        </label>
+        </div>
         <span class="radioLable">Gender:</span>
         <div class="radioGroup">
           <input type="radio" id="male" name="gender" value="MALE" checked />
@@ -42,33 +45,41 @@
           <input type="radio" id="other" name="gender" value="OTHER" />
           <label for="other">Other</label>
         </div>
-        <label for="">
-          <span class="lm-1">Phone:</span>
-          <input class="code" type="text" placeholder="+98" />
-          <input type="tel" placeholder="phone no" />
-        </label>
-        <label for="">
-          <span class="lm-1">Current Address:</span>
+        <div>
+          <label class="lm-1">Phone:</label>
+          <input class="code" type="text" placeholder="+98" name="code" />
+          <input type="tel" placeholder="phone no" name="phone" />
+          <div class="error"></div>
+        </div>
+        <div>
+          <label class="lm-1">Current Address:</label>
           <textarea
-            name=""
+            name="address"
             id=""
             cols="30"
             rows="10"
             placeholder="Current Address"
           ></textarea>
-        </label>
-        <label for="" class="email-label">
-          <span class="lm-1"><strong>Email:</strong></span>
-          <input type="email" placeholder="Enter Email" />
-        </label>
-        <label for="" class="pass-label">
-          <span class="lm-1"><strong>Password:</strong></span>
-          <input type="password" placeholder="Enter Password" />
-        </label>
-        <label for="" class="retype-label">
-          <span class="lm-1"><strong>Re-type Password:</strong></span>
-          <input type="password" placeholder="Retype Password" />
-        </label>
+        </div>
+        <div class="email-label">
+          <label class="lm-1"><strong>Email:</strong></label>
+          <input type="text" placeholder="Enter Email" name="email" />
+          <div class="error"></div>
+        </div>
+        <div class="pass-label">
+          <label class="lm-1"><strong>Password:</strong></label>
+          <input type="password" placeholder="Enter Password" name="password" />
+          <div class="error"></div>
+        </div>
+        <div class="retype-label">
+          <label class="lm-1"><strong>Re-type Password:</strong></label>
+          <input
+            type="password"
+            placeholder="Retype Password"
+            name="retype-pass"
+          />
+          <div class="error"></div>
+        </div>
         <button type="submit" class="submit">Register</button>
       </form>
     </main>

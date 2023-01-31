@@ -41,7 +41,7 @@ hr {
 }
 .lm-1 {
   display: block;
-  margin-bottom: 0.3rem;
+  margin: 0.3rem 0;
 }
 .form input,
 textarea {
@@ -63,6 +63,10 @@ select {
 .form select {
   padding: 0rem;
 }
+.course {
+  text-align: start;
+  margin-top: 1rem;
+}
 .code {
   margin-bottom: 0.5rem;
 }
@@ -76,6 +80,7 @@ select {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  gap: 0.3rem;
 }
 .radioLable {
   justify-self: flex-start;
@@ -92,6 +97,21 @@ select {
   margin-top: 1rem;
   font-weight: bold;
   cursor: pointer;
+}
+
+.error {
+  text-align: start;
+  margin-top: 0.2rem;
+  color: rgb(218, 0, 0);
+  background-color: rgba(253, 167, 167, 0.507);
+  padding: 0.5rem;
+  display: none;
+}
+.invalid {
+  border: 2px solid rgb(218, 0, 0) !important;
+}
+.valid {
+  border: 2px solid rgb(0, 155, 0) !important;
 }
 
 @media screen and (max-width: 450px) {
