@@ -1,0 +1,134 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.main-container {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  margin: 3rem 0 1rem 0;
+  font-size: 2rem;
+}
+.ads {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.video {
+  width: 50rem;
+  height: 25rem;
+}
+.filter-section {
+  width: auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+.filter-section,
+.products {
+  width: 100%;
+  margin: 2rem;
+}
+.filter {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  /* text-align: center; */
+}
+.filter label {
+  font-weight: bold;
+  font-size: 0.85rem;
+  /* margin-bottom: 1rem; */
+}
+.input-button {
+  background-color: #2b85c3;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 0.5rem 5rem;
+  cursor: pointer;
+}
+.btn-container {
+  position: relative;
+}
+.filter-icon {
+  position: absolute;
+  left: 4rem;
+  top: 1.5rem;
+}
+.select {
+  outline: none;
+  border: 1px solid #ccc;
+  color: rgb(99, 99, 99);
+  padding: 0.5rem 5rem 0.5rem 0;
+}
+.select option {
+  width: 100%;
+  text-align: left;
+}
+.select option:first-child {
+  color: rgb(99, 99, 99);
+}
+.product-table {
+  width: 100%;
+  /* text-align: center; */
+}
+.product-table img {
+  width: 7rem;
+  height: 5rem;
+}
+
+.product-table th,
+td {
+  width: 7rem;
+  text-align: center;
+  padding: 0.5rem;
+  border-collapse: collapse;
+  border: none;
+}
+.trow {
+  box-shadow: 0.1rem 0.1rem 0.5rem #ccc;
+  border-radius: 5px;
+}
+.product-table td {
+  font-size: 0.8rem;
+  color: rgb(99, 99, 99);
+}
+.purches {
+  background-color: #0f1f74;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+hr {
+  border-top: 1px solid rgba(133, 133, 133, 0.562);
+  margin-bottom: 3rem;
+}
