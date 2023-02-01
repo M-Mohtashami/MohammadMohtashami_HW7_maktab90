@@ -13,8 +13,68 @@
         <h1>مشاهده ویدئو معرفی محصولات</h1>
         <video class="video" src="a.mp4"></video>
       </section>
-      <section class="filter"></section>
-      <section class="products"></section>
+      <section class="filter-section">
+        <form class="filter">
+          <div>
+            <label for="model">Laptop Model:</label>
+            <select name="model" id="model">
+              <option value="0">Nothing Selected</option>
+              <option value="Asus">Asus</option>
+              <option value="Lenovo">Lenovo</option>
+              <option value="Dell">Dell</option>
+            </select>
+          </div>
+          <div>
+            <label for="processor">Processor:</label>
+            <select name="processor" id="processor">
+              <option value="0">Nothing Selected</option>
+              <option value="Intel">Intel</option>
+              <option value="AMD">AMD</option>
+            </select>
+          </div>
+          <div>
+            <label for="Ram">RAM:</label>
+            <input class="input-button" type="button" value="RAM" />
+          </div>
+          <div>
+            <label for="Hard disk">Hard Disk:</label>
+            <input class="input-button" type="button" value="Hard Disk" />
+          </div>
+          <div>
+            <label for="display">Display:</label>
+            <select name="display" id="display">
+              <option value="0">Nothing Selected</option>
+              <option value="15.6">15.6"</option>
+              <option value="14">14"</option>
+            </select>
+          </div>
+        </form>
+      </section>
+      <section class="products">
+        <ul class="products-list">
+          <li class="product">
+            <div class="product-pic">
+              <img src="" alt="" />
+            </div>
+            <div class="product-details">
+              <div class="title">
+                <h4>Model</h4>
+                <h4>Processor</h4>
+                <h4>RAM</h4>
+                <h4>Hard Disk</h4>
+                <h4>Display</h4>
+                <h4>Graphic</h4>
+                <h4>OS</h4>
+                <h4>Weight</h4>
+                <h4>Battery</h4>
+                <h4>Price</h4>
+                <h4>Purches</h4>
+              </div>
+              <div class="values"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
