@@ -11,43 +11,44 @@
     <main class="container">
       <h2 class="title">Student Registration Form</h2>
       <hr />
-      <form action="" class="form">
+      <form action="" class="form" id="form-registration">
         <div>
           <label class="lm-1">Firstname:</label>
-          <input type="text" name="firstname" />
+          <input type="text" name="firstname" placeholder="First Name" />
           <div class="error"></div>
         </div>
         <div>
           <label class="lm-1">Middlename:</label>
-          <input type="text" name="middlename" />
-          <div class="error"></div>
+          <input type="text" name="middlename" placeholder="Middle Name" />
+          <!-- <div class="error"></div> -->
         </div>
         <div>
           <label class="lm-1">Lastname:</label>
-          <input type="text" name="lastname" />
+          <input type="text" name="lastname" placeholder="Last Name" />
           <div class="error"></div>
         </div>
         <div class="course">
           <label>Course:</label>
-          <select id="course">
+          <select id="course" name="course">
             <option value="0" disabled selected>Course</option>
-            <option value="1">course 1</option>
-            <option value="2">course 2</option>
-            <option value="3">course 3</option>
+            <option value="course 1">course 1</option>
+            <option value="course 2">course 2</option>
+            <option value="course 3">course 3</option>
           </select>
+          <div class="error"></div>
         </div>
-        <span class="radioLable">Gender:</span>
+        <span class="radioLable lm-1">Gender:</span>
         <div class="radioGroup">
-          <input type="radio" id="male" name="gender" value="MALE" checked />
+          <input type="radio" id="male" name="gender" value="male" checked />
           <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="FEMALE" />
+          <input type="radio" id="female" name="gender" value="female" />
           <label for="female">Female</label>
-          <input type="radio" id="other" name="gender" value="OTHER" />
+          <input type="radio" id="other" name="gender" value="other" />
           <label for="other">Other</label>
         </div>
         <div>
           <label class="lm-1">Phone:</label>
-          <input class="code" type="text" placeholder="+98" name="code" />
+          <input class="code" type="text" name="code" value="+98" />
           <input type="tel" placeholder="phone no" name="phone" />
           <div class="error"></div>
         </div>
@@ -60,6 +61,7 @@
             rows="10"
             placeholder="Current Address"
           ></textarea>
+          <div class="error"></div>
         </div>
         <div class="email-label">
           <label class="lm-1"><strong>Email:</strong></label>
@@ -76,7 +78,8 @@
           <input
             type="password"
             placeholder="Retype Password"
-            name="retype-pass"
+            name="retype_pass"
+            id="pass_check"
           />
           <div class="error"></div>
         </div>

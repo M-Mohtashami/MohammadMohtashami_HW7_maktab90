@@ -35,13 +35,11 @@ hr {
   display: flex;
   flex-direction: column;
 }
-.form label {
-  text-align: start;
-  padding: 0.5rem 0rem;
-}
+
 .lm-1 {
   display: block;
-  margin: 0.3rem 0;
+  text-align: start;
+  padding: 1rem 0 0.2rem 0;
 }
 .form input,
 textarea {
@@ -107,10 +105,10 @@ select {
   padding: 0.5rem;
   display: none;
 }
-.invalid {
+.invalid-input {
   border: 2px solid rgb(218, 0, 0) !important;
 }
-.valid {
+.valid-input {
   border: 2px solid rgb(0, 155, 0) !important;
 }
 
